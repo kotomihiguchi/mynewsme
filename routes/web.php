@@ -26,5 +26,6 @@ Route::get('xxx', 'AAAController@bbb');
 //Admin/ProfileControllerを作成し、add Action, edit Actionを追加しました。web.phpを編集して、
 //admin/profile/create にアクセスしたら ProfileController の add Action に、
 //admin/profile/edit にアクセスしたら ProfileController の edit Action に割り当てるように設定してください
-Route::get('admin/profile/create', 'ProfileController@add');
-Route::get('admin/profile/edit', 'ProfileController@edit');
+Route::get('admin/profile/create', 'Admin\ProfileController@add');
+Route::get('admin/profile/edit', 'Admin\ProfileController@edit');
+
